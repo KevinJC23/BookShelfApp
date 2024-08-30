@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    font-family: "Nunito", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #5F30E2;
+    padding: 25px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #5F30E2;
+    margin-bottom: 15px;
+}
+
+form {
+    display: grid;
+    gap: 15px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="number"], button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    margin-left: -510px;
+    margin-top: -21px;
+}
+
+input[type="text"], input[type="number"] {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background: #5F30E2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #4A23B7;
+}
+
+button:disabled {
+    background: #ccc;
+}
+
+#bookFormSubmit {
+    align-self: start;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+#bookFormSubmit span {
+    font-weight: normal;
+}
+
+#incompleteBookList, #completeBookList {
+    display: grid;
+    gap: 20px;
+}
+
+[data-testid="bookItem"] {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fafafa;
+}
+
+[data-testid="bookItem"] h3 {
+    color: #5F30E2;
+}
+
+[data-testid="bookItem"] p {
+    margin: 30px 0;
+}
+
+[data-testid="bookItem"] div {
+    display: absolute;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+[data-testid="bookItem"] button {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+#searchBook {
+    gap: 10px;
+}
+
+#searchSubmit {
+    padding: 10px 20px;
+}
