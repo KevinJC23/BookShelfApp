@@ -1,132 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
-* {
-    font-family: "Nunito", sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
 }
 
-header {
-    background: #5F30E2;
-    padding: 25px;
-    color: white;
-    text-align: center;
-    margin-bottom: 20px;
+.book-card {
+    transition: all 0.3s ease;
 }
 
-main {
-    max-width: 800px;
-    margin: 0 auto;
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-section {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    color: #5F30E2;
-    margin-bottom: 15px;
-}
-
-form {
-    display: grid;
-    gap: 15px;
-}
-
-form div {
+.checkbox-container {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
-label {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-input[type="text"], input[type="number"], button {
-    padding: 10px;
-    font-size: 16px;
-}
-
-input[type="checkbox"] {
-    margin-left: -510px;
-    margin-top: -21px;
-}
-
-input[type="text"], input[type="number"] {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-button {
-    background: #5F30E2;
-    color: white;
-    border: none;
+.checkbox-container input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4f46e5;
     border-radius: 4px;
     cursor: pointer;
-    transition: background 0.3s;
+    position: relative;
+    transition: all 0.3s ease;
 }
 
-button:hover {
-    background: #4A23B7;
+.checkbox-container input[type="checkbox"]:checked {
+    background-color: #4f46e5;
 }
 
-button:disabled {
-    background: #ccc;
+.checkbox-container input[type="checkbox"]:checked::after {
+    content: "✓";
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-#bookFormSubmit {
-    align-self: start;
-    display: inline-block;
-    padding: 10px 20px;
+.search-input {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' fill='none' viewBox='0 0 24 24' stroke='%239ca3af'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z' /%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1rem 1rem;
 }
 
-#bookFormSubmit span {
-    font-weight: normal;
-}
-
-#incompleteBookList, #completeBookList {
-    display: grid;
-    gap: 20px;
-}
-
-[data-testid="bookItem"] {
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    background: #fafafa;
-}
-
-[data-testid="bookItem"] h3 {
-    color: #5F30E2;
-}
-
-[data-testid="bookItem"] p {
-    margin: 30px 0;
-}
-
-[data-testid="bookItem"] div {
-    display: absolute;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-[data-testid="bookItem"] button {
-    flex: 1;
-    padding: 8px;
-    font-size: 14px;
-    margin-right: 10px;
-}
-
-#searchBook {
-    gap: 10px;
-}
-
-#searchSubmit {
-    padding: 10px 20px;
+.empty-state {
+    opacity: 0.6;
 }
