@@ -16,4 +16,5 @@
   - Tailwind CSS
 
 ## 📦Installation
+1. Clone Repository
 <pre>git clone https://github.com/KevinJC23/BookshelfApp.git</pre>
