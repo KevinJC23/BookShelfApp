@@ -7,3 +7,13 @@
 - Change a book's status (Unread or Read).
 - Delete books from the list.
 - Local Storage used to save user's book list.
+
+## 🛠️ Tech Stack
+- Front-End:
+  - HTML
+  - CSS
+  - JavaScript
+  - Tailwind CSS
+
+## 📦Installation
+<pre>```git clone https://github.com/KevinJC23/BookshelfApp.git```</pre>
