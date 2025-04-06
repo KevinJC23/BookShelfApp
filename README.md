@@ -1,5 +1,5 @@
 ## 📌 Description
-**Bookshelf App** is an application that helps users manage their reading list — including books they are currently reading, want to read, or have finished reading.
+**BookShelf App** is an application that helps users manage their reading list — including books they are currently reading, want to read, or have finished reading.
 
 ## 🚀 Features
 - Add books with Title, Author, Year and a Checkbox to mark whether the book has been read.
